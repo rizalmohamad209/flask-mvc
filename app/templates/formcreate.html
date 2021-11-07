@@ -1,0 +1,27 @@
+{% extends "index.html" %} 
+{% block content %}
+<section>
+    <div class="h-screen bg-gray-200 flex justify-center">
+    <div class="py-6 px-8 h-96 mt-40 bg-white rounded shadow-xl w-10/12 ">
+      <form action="/user" method="POST">
+        <div class="mb-6">
+          <label for="nama" class="block text-gray-800 font-bold">Name:</label>
+          <input type="text" name="nama" id="nama" placeholder="username" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600 :ring-indigo-600" />
+        </div>
+
+        <div class="mb-6">
+          <label for="kabupaten" class="block text-gray-800 font-bold">Kabupaten:</label>
+          <input type="text" name="kabupaten" id="kabupaten" placeholder="Masukan Kabupaten" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600 :ring-indigo-600" />
+        </div>
+         <div class="mb-6">
+          <label for="provinsi" class="block text-gray-800 font-bold">Provinsi:</label>
+          <input type="text" name="provinsi" id="provinsi" placeholder="MAsukan Provinsi" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600 :ring-indigo-600" />
+      <button type="submit" class="cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white font-bold w-full text-center rounded">Tambah</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
